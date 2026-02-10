@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DWRada | Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Gerador de Senhas v1.0</h2>
+        <input type="text" id="password" readonly placeholder="Sua senha aparecerá aqui">
+
+        <div id="btns">
+            <label for="size">Tamanho: </label>
+            <input type="range" id="size" min="8" max="25" value="8">
+            <span id="sizeValue"></span>
+        </div>
+
+        <button onclick="generate()">GERAR SENHA SEGURA</button><br><br>
+        <button onclick="copy()">COPIAR SENHA</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
